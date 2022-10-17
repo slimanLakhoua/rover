@@ -25,7 +25,7 @@ public class RoverApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
-			List<String> results = roverService.processFile("instructionsPassesLimits.txt");
+			List<String> results = roverService.processFile("exercice.txt");
 			results.forEach(log::info);
 		};
 	}
